@@ -16,6 +16,7 @@ a:hover {
   clear: both;
 }
 .main-wraper {
+  overflow: hidden;
   background: #444 url(../img/banner.jpg) no-repeat center center fixed;
   background-size: cover;
 }
@@ -25,6 +26,9 @@ header {
 nav {
   height: 50px;
   background-color: transparent;
+}
+.active {
+  border-bottom: 2px solid #fff;
 }
 nav ul {
   float: right;
@@ -215,5 +219,67 @@ footer {
 }
 .copy {
   padding-bottom: 20px;
+}
+.sidebar {
+  position: fixed;
+  width: 300px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: translate(300px, 0);
+  -moz-transform: translate(300px, 0);
+  -ms-transform: translate(300px, 0);
+  -o-transform: translate(300px, 0);
+  transform: translate(300px, 0);
+  background: rgba(76, 76, 76, 0.81);
+  color: #000;
+  transition: all 0.5s;
+}
+.sidebar ul {
+  margin-top: 40px;
+}
+.sidebar a {
+  width: 100%;
+  padding: 10px 30px;
+  display: inline-block;
+  color: #fff;
+}
+.sidebar a:hover {
+  background: #444;
+}
+.mask {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
+.article-section {
+  color: #fff;
+}
+.center {
+  padding: 40px;
+  border-radius: 90%;
+  background: rgba(11, 176, 8, 0.81);
+}
+.center h1 {
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+.center p {
+  text-indent: 2em;
+  width: 60%;
+  margin-left: 20%;
 }
 /*# sourceMappingURL=index.css.map */
